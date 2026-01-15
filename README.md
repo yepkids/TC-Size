@@ -1,11 +1,11 @@
 # TC size calculator and analysis
 
-Author:  Yushan Han
-Email:   [yshhan@ucdavis.edu]
+Author:  Yushan Han  
+Email:   yshhan@ucdavis.edu
 
 Copyright 2026 Yushan Han
 
-Linked Zenodo DOI: [https://doi.org/10.5281/zenodo.10906284]
+Linked Zenodo DOI: [Available Soon]
 
 Introduction
 =====
