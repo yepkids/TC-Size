@@ -1,0 +1,2 @@
+All original SyCLoPS classified LPS tracks used in this study can be downloaded from this Zenodo repo: https://zenodo.org/records/18226202
+Plus, 1970-2024 SyCLoPS ERA5 input and classified datasets can be downloaded from: https://doi.org/10.5281/zenodo.10906284
