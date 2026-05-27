@@ -5,7 +5,8 @@ Email:   yshhan@ucdavis.edu
 
 Copyright 2026 Yushan Han
 
-Linked Zenodo DOI: [Available Soon]
+Preprint: [The Evolution of Tropical Cyclone Intensity and Size in Observations and HighResMIP Models](https://doi.org/10.22541/essoar.177038847.73410174/v1)
+
 
 Introduction
 =====
