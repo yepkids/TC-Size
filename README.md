@@ -11,7 +11,7 @@ Preprint: [The Evolution of Tropical Cyclone Intensity and Size in Observations 
 Introduction
 =====
 
-This repository contains software for detecting and calculating the size of tropical cyclones (TCs) in atmospheric reanalysis products and model outputs. This software was used to produce the results presented in our paper (preprint link available soon). The repository also contains the tools and Jupyter notebooks used to create the figures in the paper. Data produced for the paper can be downloaded via the links provided in the corresponding subfolders. 
+This repository contains software for detecting and calculating the size of tropical cyclones (TCs) in atmospheric reanalysis products and model outputs. This software was used to produce the results presented in our paper (see above for the preprint link). The repository also contains the tools and Jupyter notebooks used to create the figures in the paper. Data produced for the paper can be downloaded via the links provided in the corresponding subfolders. 
 
 Details of how we define and calcualte TC size can be found in Section 2.5 and supporting information text S5 of the paper.
 
