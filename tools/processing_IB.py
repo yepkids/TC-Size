@@ -30,8 +30,9 @@ df1.loc[df1.LON==360,'LON']=0.0
 df1.LON=-df1.LON%360
 
 # Adjust wind speeds based on basin and data source
-df['ADJ_WIND']=df.apply(lambda x: np.round(x['USA_WIND']*(1.06/1.11)) if x['WMO_WIND']==0 and x['BASIN'] == 'NI' else x['WMO_WIND'], axis=1)
-df['ADJ_WIND']=df.apply(lambda x: np.round(x['USA_WIND']*(1.03/1.11)) if x['WMO_WIND']==0 and any(x['BASIN'] != np.array(['EP','NA','NI'])) else x['WMO_WIND'], axis=1)
+df['USA_WIND'] = df.apply(lambda x: x['DS824_WIND'] if x['USA_WIND']==0 and not np.isnan(x['DS824_WIND']) else x['USA_WIND'], axis=1)
+df['USA_WIND'] = df.apply(lambda x: x['TD9636_WIND'] if x['USA_WIND']==0 and not np.isnan(x['TD9636_WIND']) else x['USA_WIND'], axis=1)
+df['ADJ_WIND']=df.apply(lambda x: np.round(x['USA_WIND']*(1.03/1.11)) if x['WMO_WIND']==0 and x['BASIN'] not in np.array(['EP','NA','NI']) else np.round(x['USA_WIND']*(1.06/1.11)) if x['WMO_WIND']==0 and x['BASIN'] == 'NI' else x['USA_WIND'], axis=1)
 df = df.rename(columns={'ADJ_WIND':'WS'})
 
 if Mode=='Selected': # Only keep tropical LPS records

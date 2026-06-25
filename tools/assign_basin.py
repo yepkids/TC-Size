@@ -42,20 +42,20 @@ def assign_basin(name, df):
     dftrack.to_csv(f'./final_track_file/{name}.csv',index=False)
         
 files ={
-    'mris': 'path_to_the_output_of_TC_size_calculator/MRI-S_SIZE.csv',
-    'mrih': 'path_to_the_output_of_TC_size_calculator/MRI-H_SIZE.csv',
-    'ipslvhr': 'path_to_the_output_of_TC_size_calculator/IPSL-VHR_SIZE.csv',
-    'ipslhr': 'path_to_the_output_of_TC_size_calculator/IPSL-HR_SIZE.csv',
-    'echrm1': 'path_to_the_output_of_TC_size_calculator/ECMWF-HR-mem1_SIZE.csv',
-    'eclrm1': 'path_to_the_output_of_TC_size_calculator/ECMWF-LR-mem1_SIZE.csv',
-    'era5deg1': 'path_to_the_output_of_TC_size_calculator/ERA5deg1_SIZE.csv',
-    'era5': 'path_to_the_output_of_TC_size_calculator/ERA5_SIZE.csv',
-    'hadgem': 'path_to_the_output_of_TC_size_calculator/HadGEM-HR_SIZE.csv',
-    'cnrm': 'path_to_the_output_of_TC_size_calculator/CNRM-HR_SIZE.csv',
-    'hadgem-coup': 'path_to_the_output_of_TC_size_calculator/HadGEM-HR-COUP_SIZE.csv',
-    'cnrm-coup': 'path_to_the_output_of_TC_size_calculator/CNRM-HR-COUP_SIZE.csv',
-    'echrm1-coup': 'path_to_the_output_of_TC_size_calculator/ECMWF-HR-mem1-COUP_SIZE.csv',
-    'ecearth3p': 'path_to_the_output_of_TC_size_calculator/EC-Earth3P-HR_SIZE.csv'
+    'mris': '../output_size/MRI-S_SIZE.csv',
+    'mrih': '../output_size/MRI-H_SIZE.csv',
+    'ipslvhr': '../output_size/IPSL-VHR_SIZE.csv',
+    'ipslhr': '../output_size/IPSL-HR_SIZE.csv',
+    'echrm1': '../output_size/ECMWF-HR-mem1_SIZE.csv',
+    'eclrm1': '../output_size/ECMWF-LR-mem1_SIZE.csv',
+    'era5deg1': '../output_size/ERA5deg1_SIZE.csv',
+    'era5': '../output_size/ERA5_SIZE.csv',
+    'hadgem': '../output_size/HadGEM-HR_SIZE.csv',
+    'cnrm': '../output_size/CNRM-HR_SIZE.csv',
+    'hadgem-coup': '../output_size/HadGEM-HR-COUP_SIZE.csv',
+    'cnrm-coup': '../output_size/CNRM-HR-COUP_SIZE.csv',
+    'echrm1-coup': '../output_size/ECMWF-HR-mem1-COUP_SIZE.csv',
+    'ecearth3p': '../output_size/EC-Earth3P-HR_SIZE.csv'
 }
 # Load CSVs
 dfsize = {}
@@ -68,20 +68,20 @@ for name, df in dfsize.items():
     
 # File paths for ZU tracks
 ZU_files = {
-    'hadgem': 'classified_track/zu_tctrack/hadgem_zu_tracks.csv',
-    'cnrm': 'classified_track/zu_tctrack/cnrm_zu_tracks.csv',
-    'hadgem-coup': 'classified_track/zu_tctrack/hadgem-coup_zu_tracks.csv',
-    'mrih': 'classified_track/zu_tctrack/mrih_zu_tracks.csv',
-    'mris': 'classified_track/zu_tctrack/mris_zu_tracks.csv',
-    'ipslhr': 'classified_track/zu_tctrack/ipslhr_zu_tracks.csv',
-    'ipslvhr': 'classified_track/zu_tctrack/ipslvhr_zu_tracks.csv',
-    'echrm1': 'classified_track/zu_tctrack/echrm1_zu_tracks.csv',
-    'eclrm1': 'classified_track/zu_tctrack/eclrm1_zu_tracks.csv',
-    'cnrm-coup': 'classified_track/zu_tctrack/cnrm-coup_zu_tracks.csv',
-    'ecearth3p': 'classified_track/zu_tctrack/ecearth3p_zu_tracks.csv',
-    'echrm1-coup': 'classified_track/zu_tctrack/echrm1-coup_zu_tracks.csv',
-    'era5': 'classified_track/zu_tctrack/era5_zu_tracks.csv',
-    'era5deg1': 'classified_track/zu_tctrack/era5deg1_zu_tracks.csv'
+    'hadgem': '../classified_track/zu_tctrack/hadgem_zu_tracks.csv',
+    'cnrm': '../classified_track/zu_tctrack/cnrm_zu_tracks.csv',
+    'hadgem-coup': '../classified_track/zu_tctrack/hadgem-coup_zu_tracks.csv',
+    'mrih': '../classified_track/zu_tctrack/mrih_zu_tracks.csv',
+    'mris': '../classified_track/zu_tctrack/mris_zu_tracks.csv',
+    'ipslhr': '../classified_track/zu_tctrack/ipslhr_zu_tracks.csv',
+    'ipslvhr': '../classified_track/zu_tctrack/ipslvhr_zu_tracks.csv',
+    'echrm1': '../classified_track/zu_tctrack/echrm1_zu_tracks.csv',
+    'eclrm1': '../classified_track/zu_tctrack/eclrm1_zu_tracks.csv',
+    'cnrm-coup': '../classified_track/zu_tctrack/cnrm-coup_zu_tracks.csv',
+    'ecearth3p': '../classified_track/zu_tctrack/ecearth3p_zu_tracks.csv',
+    'echrm1-coup': '../classified_track/zu_tctrack/echrm1-coup_zu_tracks.csv',
+    'era5': '../classified_track/zu_tctrack/era5_zu_tracks.csv',
+    'era5deg1': '../classified_track/zu_tctrack/era5deg1_zu_tracks.csv'
 }
 
 # Load and clean CSVs

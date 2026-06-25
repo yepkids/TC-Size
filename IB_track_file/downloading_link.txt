@@ -1,3 +1,3 @@
-The official IBTrACS file 'ibtracs.since1980.list.v04r01.csv' can be downloaded from: https://www.ncei.noaa.gov/products/international-best-track-archive
-The official extened best track (EBT) data 'ebt_1988_2021.csv' can be downloaded from: https://rammb2.cira.colostate.edu/research/tropical-cyclones/tc_extended_best_track_dataset/
+The latest official IBTrACS file 'ibtracs.since1980.list.v04r01.csv' can be downloaded from: https://www.ncei.noaa.gov/products/international-best-track-archive
+The latest official extened best track (EBT) data 'ebt_1988_2021.csv' can be downloaded from: https://rammb2.cira.colostate.edu/research/tropical-cyclones/tc_extended_best_track_dataset/
 Other proceseed IB datasets used in this study can be downloaded from: https://zenodo.org/records/18178616

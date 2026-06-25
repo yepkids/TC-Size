@@ -25,17 +25,18 @@ Some additional Python packages may be required. Please refer to the relevant Py
 Usage
 =====
 
-To calculate TC size in model outputs, first have your objectively detected TC tracks by SyCLoPS ready in the `classified_track/SyCLoPS_track` folder. Then follow the steps below:
+To calculate TC size in model outputs, first have your objectively detected TC tracks ready in the `classified_track` folder, then Run:
 
-1. Use `write_nodefile.py` to transform the SyCLoPS classified catalog (in Parquet format) into StitchNodes-format text files containing only TC records.
+```python
+python TC_size_calculator.py
+```
+This program generates the nodefile used by TE to calculate wind radii and ultimately output the calculated TC size for each model. Run `python TC_size_calculator.py --help` to view the customization options, which includes mode, output directory, worker numbers for running TE, etc.
 
-2. Modify and run `TE_NodefileEditor.sh` to create quadrantal radial wind profiles and output wind radii at a specific wind speed. The output quadrant order is "NE, SE, SW, NW," as in IBTrACS. TE installation is required.
-
-3. Run the script `TC_size_calculator.py` to calculate the final TC size based on the quadrantal wind radii provided by TE's NodeFileEditor.
+Adjust the parameters and file paths in the first section of the `TC_size_calculator.py` according to your needs.
 
 Other useful tools used in our study are available in the `tools` folder. These include:
 
-1. `assign_basin.py`: This tool assigns basin labels to each TC or low-pressure system (LPS) record based on the basin mask file (`basin_mask_05deg.nc`).
+1. `assign_basin.py`: This tool assigns basin labels to each TC or low-pressure system (LPS) record based on the basin mask file (`basin_mask_05deg.nc`), and output files to the `final_track_file` directory.
 
 2. `obs_track_type.py`: Assign a precursor type and a posterior scenario label to each observed IBTrACS TC track, based on the ERA5 LPS tracks that are classified by SyCLoPS. Details on the definition of track type can be found in Section 2.4 of the paper.
 

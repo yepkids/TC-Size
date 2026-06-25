@@ -240,5 +240,3 @@ $TEMPESTEXTREMESDIR/StitchNodes \
 --range 8.0 --mintime "54h" --maxgap "24h" \
 --threshold "WS,>=,10.0,10;lat,<=,50.0,10;lat,>=,-50.0,10;ZS,<=,15.0,10" --out_file_format "csv"
 
-
-
