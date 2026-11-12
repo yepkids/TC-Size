@@ -20,7 +20,7 @@ Dependencies
 
 Wind profile detection requires the installation of TempestExtremes (TE) software, which is available at: [https://github.com/ClimateGlobalChange/tempestextremes]  
 
-We recommend using the quick_make_unix.sh script (simply run sh quick_make_unix.sh) in the TE root directory to install TE.  
+We recommend using the quick_make_unix.sh script (simply run `sh quick_make_unix.sh`) in the TE root directory to install TE.  
 
 Some additional Python packages may be required. Please refer to the relevant Python/Jupyter notebook script for more information.
 
